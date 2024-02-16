@@ -1,1 +1,2 @@
 # vue-complete-guide
+Repository to save all my progress on the Vue course from Maximilian Schwarzmüller on [Udemy](https://indra.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879296#overview).
