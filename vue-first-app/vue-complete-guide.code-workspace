@@ -11,6 +11,9 @@
         },
         {
             "path": "../cmp-adv-01-starting-setup/cmp-adv-01-starting-setup"
+        },
+        {
+            "path": "../prj-cmp-01-starting-setup/prj-cmp-01-starting-setup"
         }
     ]
 }
