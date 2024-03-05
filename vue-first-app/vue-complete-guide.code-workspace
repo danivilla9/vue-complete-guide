@@ -14,6 +14,9 @@
         },
         {
             "path": "../prj-cmp-01-starting-setup/prj-cmp-01-starting-setup"
+        },
+        {
+            "path": "../forms-01-starting-setup/forms-01-starting-setup"
         }
     ]
 }
