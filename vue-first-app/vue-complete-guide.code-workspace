@@ -17,6 +17,9 @@
         },
         {
             "path": "../forms-01-starting-setup/forms-01-starting-setup"
+        },
+        {
+            "path": "../http-01-starting-setup"
         }
     ]
 }
