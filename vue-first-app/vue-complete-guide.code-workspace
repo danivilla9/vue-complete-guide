@@ -23,6 +23,9 @@
         },
         {
             "path": "../routing-01-starting-setup"
+        },
+        {
+            "path": "../animations-01-starting-setup"
         }
     ]
 }
