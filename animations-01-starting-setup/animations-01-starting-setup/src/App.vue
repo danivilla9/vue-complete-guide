@@ -10,7 +10,14 @@
     </transition>
   </div>
   <div class="container">
-    <transition name="para">
+    <transition 
+      name="para" 
+      @before-enter="beforeEnter" 
+      @enter="enter" 
+      @after-enter="afterEnter"
+      @before-leave="beforeLeave"
+      @leave="leave"
+      @after-leave="afterLeave">
       <!--<transition enter-to-class="some-class" enter-active-class="...">-->
       <p v-if="paraIsVisible">This is only sometimes visible</p>
     </transition>
@@ -36,6 +43,24 @@ export default {
     };
   },
   methods: {
+    beforeEnter(el) {
+      console.log("before enter", el);
+    },
+    enter(el) {
+      console.log("enter", el);
+    },
+    afterEnter(el) {
+      console.log("after enter", el);
+    },
+    beforeLeave(el) {
+      console.log("before leave", el);
+    },
+    leave(el) {
+      console.log("leave", el);
+    },
+    afterLeave(el) {
+      console.log("after leave", el);
+    },
     showUsers() {
       this.usersAreVisible = true;
     },
@@ -136,7 +161,7 @@ button:active {
 
 .para-leave-active {
   /*transition: all 0.3s ease-in;*/
-  animation: slide-scale 0.3s ease-out;
+  animation: slide-scale 2s ease-out;
 }
 
 .para-leave-to {
@@ -144,7 +169,7 @@ button:active {
   transform: translateY(30px);*/
 }
 
-.fade-button-enter-from, 
+.fade-button-enter-from,
 .fade-button-leave-to {
   opacity: 0;
 }
